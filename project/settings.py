@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'taggit',
     'post' ,
     
+    
 ]
 
 MIDDLEWARE = [

@@ -16,7 +16,6 @@ class mypost(models.Model):
     publishedDate = models.DateTimeField()
     content = models.TextField(max_length=15000)
     image = models.ImageField(upload_to='post')
-     
     autor = models.ForeignKey(Autor,related_name='mypost_Autor',on_delete=models.CASCADE)
     
     tags = TaggableManager()
