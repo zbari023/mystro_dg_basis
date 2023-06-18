@@ -5,3 +5,7 @@ from .models import mypost
 def post_list(request):
     data = mypost.objects.all()
     return render(request,'post/index.html',{'post':data})
+
+def post_details(request,post_id):
+    data = mypost.objects.get(id=post_id)
+    return render(request,'post/iddetails.html',{'post':data})
